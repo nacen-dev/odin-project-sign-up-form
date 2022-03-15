@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <div class="background-img-container">
-        <p>
+        <p class="attribution">
           Photo by
           <a
             href="https://unsplash.com/@vorosbenisop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -32,31 +32,36 @@
           <p class="hero-text">Sign up <em>now</em> to get started.</p>
           <p class="hero-text">You know you want to.</p>
         </section>
-        <form class="form">
-          <section class="form-input"></section>
-          <h3>Let's do this!</h3>
-          <label for="firstName">First Name</label>
-          <input type="text" name="firstName" id="firstName" required />
-          <label for="lastName">Last Name</label>
-          <input type="text" name="lastName" id="lastName" />
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
-          <label for="phoneNumber">Phone Number</label>
-          <input type="number" name="phoneNumber" id="phoneNumber" />
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" required />
-          <label for="confirmPassword">Confirm Password</label>
-          <input
-            type="password"
-            name="confirmPassword"
-            id="confirmPassword"
-            required
-          />
-          <section class="form-buttons">
-            <button class="form-button">Create Account</button>
-            <p>Already have an account? <a href="#" class="login">Log in</a></p>
-          </section>
-        </form>
+        <div class="form-container">
+          <form class="form">
+            <section class="form-input">
+              <h3>Let's do this!</h3>
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" required />
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" required/>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                required
+              />
+            </section>
+            <div class="form-confirmation">
+              <button class="form-button">Create Account</button>
+              <p>
+                Already have an account? <a href="#" class="login">Log in</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </main>
     </div>
   </body>

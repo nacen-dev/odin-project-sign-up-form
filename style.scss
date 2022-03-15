@@ -1,7 +1,80 @@
+$white: #fff;
+$dark-blue: #12335c;
+$gray: #eee;
+
 html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  .background-img-container {
+    background: url(./benjamin-voros-phIFdC6lA4E-unsplash-medium.jpg);
+    background-size: cover;
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    .attribution,
+    .attribution a {
+      color: $white;
+      text-align: center;
+      align-self: flex-end;
+    }
+  }
+  main {
+    flex: 1;
+
+    .hero {
+      padding: 1.5rem;
+    }
+
+    .form-container {
+      .form-input {
+        padding: 2rem;
+        background-color: $dark-blue;
+        color: $white;
+
+        #phone {
+          -moz-appearance: textfield;
+
+          ::-webkit-inner-spin-button {
+            display: none;
+          }
+          ::-webkit-outer-spin-button,
+          ::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+      }
+      .form-confirmation {
+        padding: 2rem;
+        
+        .form-button {
+          padding: 1rem 2rem;
+          font-size: 1.2rem;
+          border-radius: 5px;
+          border: none;
+          background-color: $dark-blue;
+          color: $white;
+        }
+
+        .login {
+          color: $dark-blue;
+        }
+      }
+    }
+  }
 }
