@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-img-container">
+        <p>Photo by on</p>
+      </div>
+      <main>
+        <section class="hero">
+          <p class="hero-text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p class="hero-text">Sign up <em>now</em> to get started.</p>
+          <p class="hero-text">You know you want to.</p>
+        </section>
+        <form>
+          <section class="form-input"></section>
+          <h3>Let's do this!</h3>
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" required />
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="phoneNumber">Phone Number</label>
+          <input type="number" name="phoneNumber" id="phoneNumber" />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            required
+          />
+          <section class="form-buttons">
+            <button class="form-button">Create Account</button>
+            <p>Already have an account? <a href="#" class="login">Log in</a></p>
+          </section>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
