@@ -15,9 +15,9 @@ This project is intended to give you a chance to flex some of the new items you�
 
 ### Step 2: Gather Assets
 
-- [] 1. The design has a large background-image, so go find and download an image you want to use for that section. The one in the design can be found on unsplash.com, but feel free to select your own. Be sure to credit the creator of your image!
-- [] 2. Pick an external font for the ‘logo’ section. We’ve used Norse Bold, but you can use any font you like.
-- [] 3. For the image-sidebar, we’ve used this Odin logo. Again, feel free to replace it.
+- [x] 1. The design has a large background-image, so go find and download an image you want to use for that section. The one in the design can be found on unsplash.com, but feel free to select your own. Be sure to credit the creator of your image!
+- [x] 2. Pick an external font for the ‘logo’ section. We’ve used Norse Bold, but you can use any font you like.
+- [x] 3. For the image-sidebar, we’ve used this Odin logo. Again, feel free to replace it.
 
 ### Step 3: Some Tips!
 
