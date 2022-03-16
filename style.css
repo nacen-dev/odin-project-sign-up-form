@@ -51,13 +51,73 @@ body {
 }
 
 .container main .hero {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .container main .form-container .form-input {
-  padding: 2rem;
+  padding: 1rem 1.5rem;
   background-color: #12335c;
   color: #fff;
+}
+
+.container main .form-container .form-input h3 {
+  margin-top: 0;
+}
+
+.container main .form-container .form-input ul {
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container main .form-container .form-input ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.container main .form-container .form-input ul li :nth-child(1n) {
+  margin-right: 10%;
+}
+
+.container main .form-container .form-input ul li label {
+  padding-bottom: 5px;
+}
+
+.container main .form-container .form-input ul li input {
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  border-radius: 3px;
+  border: none;
+}
+
+.container main .form-container .form-input ul li :focus {
+  outline: #4895ef solid 2px;
+  border: 1px solid #12335c;
+  -webkit-box-shadow: 0 10px 10px 0px rgba(49, 49, 49, 0.6);
+          box-shadow: 0 10px 10px 0px rgba(49, 49, 49, 0.6);
+}
+
+.container main .form-container .form-input ul li .error {
+  border: 1px solid #d00000;
+  outline: none;
+}
+
+.container main .form-container .form-input ul li .valid {
+  border: 2px solid #52b788;
+  outline: none;
 }
 
 .container main .form-container .form-input #phone {
@@ -75,7 +135,7 @@ body {
 }
 
 .container main .form-container .form-confirmation {
-  padding: 2rem;
+  padding: 1.2rem 1.5rem;
 }
 
 .container main .form-container .form-confirmation .form-button {
@@ -85,9 +145,15 @@ body {
   border: none;
   background-color: #12335c;
   color: #fff;
+  cursor: pointer;
 }
 
 .container main .form-container .form-confirmation .login {
   color: #12335c;
+}
+
+.password-mismatch {
+  color: #d00000;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

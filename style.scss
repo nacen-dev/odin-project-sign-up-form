@@ -1,6 +1,9 @@
 $white: #fff;
 $dark-blue: #12335c;
 $gray: #eee;
+$light-blue: #4895ef;
+$red: #d00000;
+$green: #52b788;
 
 html {
   box-sizing: border-box;
@@ -20,6 +23,7 @@ body {
 .container {
   display: flex;
   height: 100vh;
+
   .background-img-container {
     background: url(./benjamin-voros-phIFdC6lA4E-unsplash-medium.jpg);
     background-size: cover;
@@ -33,18 +37,70 @@ body {
       align-self: flex-end;
     }
   }
+
   main {
     flex: 1;
 
     .hero {
-      padding: 1.5rem;
+      padding: 1rem 1.5rem;
     }
 
     .form-container {
       .form-input {
-        padding: 2rem;
+        padding: 1rem 1.5rem;
         background-color: $dark-blue;
         color: $white;
+
+        h3 {
+          margin-top: 0;
+        }
+
+        ul {
+          width: 90%;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+
+          li {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 1rem;
+
+            :nth-child(1n) {
+              margin-right: 10%;
+            }
+
+            label {
+              padding-bottom: 5px;
+            }
+
+            input {
+              padding: 5px 10px;
+              font-size: 0.875rem;
+              border-radius: 3px;
+              border: none;
+            }
+
+            :focus {
+              outline: $light-blue solid 2px;
+              border: 1px solid $dark-blue;
+              box-shadow: 0 10px 10px 0px rgba(49, 49, 49, 0.6);
+            }
+
+            .error {
+              border: 1px solid $red;
+              outline: none;
+            }
+
+            .valid {
+              border: 2px solid $green;
+              outline: none;
+            }
+          }
+        }
 
         #phone {
           -moz-appearance: textfield;
@@ -60,8 +116,8 @@ body {
         }
       }
       .form-confirmation {
-        padding: 2rem;
-        
+        padding: 1.2rem 1.5rem;
+
         .form-button {
           padding: 1rem 2rem;
           font-size: 1.2rem;
@@ -69,6 +125,7 @@ body {
           border: none;
           background-color: $dark-blue;
           color: $white;
+          cursor: pointer;
         }
 
         .login {
@@ -77,4 +134,9 @@ body {
       }
     }
   }
+}
+
+.password-mismatch {
+  color: $red;
+  font-size: 1rem;
 }
