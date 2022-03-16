@@ -5,6 +5,8 @@ $light-blue: #4895ef;
 $red: #d00000;
 $green: #52b788;
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -28,13 +30,44 @@ body {
     background: url(./benjamin-voros-phIFdC6lA4E-unsplash-medium.jpg);
     background-size: cover;
     flex: 0.8;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .logo {
+      font-family: 'Oswald', sans-serif;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      position: absolute;
+      top: 20%;
+      width: 100%;
+
+      .logo-image {
+        width: 100px;
+        height: 100px;
+      }
+
+      span {
+        color: $white;
+        font-size: 4rem;
+      }
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
     .attribution,
     .attribution a {
       color: $white;
       text-align: center;
-      align-self: flex-end;
     }
   }
 

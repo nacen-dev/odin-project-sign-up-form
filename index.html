@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="background-img-container">
+        <div class="logo">
+          <img src="./odin-lined.png" class="logo-image" alt="logo" />
+          <span>ODIN</span>
+        </div>
         <p class="attribution">
           Photo by
           <a
@@ -36,23 +41,49 @@
           <form class="form">
             <section class="form-input">
               <h3>Let's do this!</h3>
-              <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName" required />
-              <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" id="lastName" />
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
-              <label for="phone">Phone Number</label>
-              <input type="tel" name="phone" id="phone" required/>
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" required />
-              <label for="confirmPassword">Confirm Password</label>
-              <input
-                type="password"
-                name="confirmPassword"
-                id="confirmPassword"
-                required
-              />
+              <ul>
+                <li>
+                  <label for="firstName">First Name</label>
+                  <input type="text" name="firstName" id="firstName" required />
+                </li>
+                <li>
+                  <label for="lastName">Last Name</label>
+                  <input type="text" name="lastName" id="lastName" />
+                </li>
+                <li>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required />
+                </li>
+                <li>
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" name="phone" id="phone" required minlength="5" maxlength="15"/>
+                </li>
+                <li>
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    minlength="8"
+                    maxlength="25"
+                    class="password"
+                  />
+                  <span class="password-mismatch"></span>
+                </li>
+                <li>
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="confirmPassword"
+                    id="confirmPassword"
+                    required
+                    minlength="8"
+                    maxlength="25"
+                    class="password"
+                  />
+                </li>
+              </ul>
             </section>
             <div class="form-confirmation">
               <button class="form-button">Create Account</button>
